@@ -1,0 +1,142 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  outline: none;
+  border: none;
+}
+body {
+  text-align: center;
+  font-family: "poppins", sans-serif;
+}
+/* Styles for header */
+header {
+  background-color: #7a6ad8;
+  border-radius: 0px 0px 25px 25px;
+  color: #fff;
+  padding: 20px;
+}
+h1 {
+  margin: 0;
+}
+
+/* Styles for add course button */
+.add-course {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 0px auto;
+  font-size: 16px;
+  margin-top: 50px;
+  display: flex;
+  cursor: pointer;
+}
+.add-course:hover {
+  background-color: #3e8e41;
+}
+/* Courses Header Styles */
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 90px;
+}
+.article__text {
+  color: #7a6ad8;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.article__title {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+/* Courses Cards */
+.container {
+  display: flex;
+  width: 80%;
+  height: 70px;
+  padding: 40px;
+  margin: 50px auto;
+  background-color: #f1f0fe;
+  border-radius: 40px;
+  box-shadow: 5px 5px 6px 1px #00000038;
+  overflow: hidden;
+}
+#container__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+.container__list__items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.container__list__item1 {
+  display: flex;
+  font-size: 14px;
+  color: #4a4a4abf;
+}
+.container__list__item2 {
+  font-size: 16px;
+  color: #7a6ad8;
+  font-weight: 600;
+}
+.instructor {
+  text-transform: capitalize;
+}
+.course-name {
+  text-transform: capitalize;
+}
+/* Modify Button Styles */
+#modify {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  background-color: #4caf50;
+  border-radius: 100px;
+  transform: translate(-80px, -20px);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#modify .icon {
+  margin-left: 35px;
+}
+
+#modify:hover {
+  background-color: #3e8e41;
+}
+/* Delete Button Styles */
+#delete {
+  width: 150px;
+  height: 100px;
+  background-color: #f44336;
+  border-radius: 100px;
+  transform: translate(80px, -20px);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#delete .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 30px;
+  transition-duration: 0.4s;
+}
+
+#delete .icon {
+  left: 40%;
+}
+
+#delete:hover {
+  background-color: #e53935;
+}
