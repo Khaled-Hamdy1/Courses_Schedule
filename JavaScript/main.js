@@ -3,7 +3,7 @@ let Cards = document.getElementById("cards");
 window.onload = renderData;
 
 function addCourse() {
-  window.location.href = "/add.html";
+  window.location.href = "/HTML/data.html";
 }
 
 function renderData() {
@@ -81,5 +81,5 @@ function deleteCourse(idx) {
 
 function modifyCourse(idx) {
   localStorage.setItem("modify", idx);
-  window.location.href = "/data.html";
+  window.location.href = "/HTML/data.html";
 }
